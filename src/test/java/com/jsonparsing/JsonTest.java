@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class JsonTest {
 
-    private String simpleTestCaseJsonSource = "{ \"title\":\"Json Code Grind\"} :";
+    private String simpleTestCaseJsonSource = "{ \"title\":\"Json Code Grind\"}";
 
     @org.junit.jupiter.api.Test
     void parse() throws JsonProcessingException {

@@ -11,7 +11,6 @@ public class Json {
 
     private static ObjectMapper getDefObjectMapper(){
         ObjectMapper defObjectMapper = new ObjectMapper();
-        // ---
         return defObjectMapper;
     }
 
