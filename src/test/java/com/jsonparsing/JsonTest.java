@@ -34,4 +34,15 @@ class JsonTest {
         JsonNode node = Json.toJson(pojo);
         assertEquals(node.get("title").asText(),"Part two test");
     }
+
+    @Test
+    void stringfyNode() throws JsonProcessingException {
+        SimpleTestCaseJsonPojo pojo = new SimpleTestCaseJsonPojo();
+        pojo.setTitle("Part two test");
+
+        JsonNode node = Json.toJson(pojo);
+
+        System.out.println(Json.stringfyNode(node));
+        System.out.println(Json.prettyPrintNode(node));
+    }
 }
